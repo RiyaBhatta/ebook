@@ -1,5 +1,6 @@
 import React from "react";
 import OIP from "../../public/OIP.jpeg"
+import { Link } from "react-router-dom";
 
 function Banner() {
   return (
@@ -20,7 +21,7 @@ function Banner() {
           </p>
           <input type="text" placeholder="Type your email here" className="input" />
         </div>
-        <button className="btn mt-5 btn-secondary">Register</button>
+        <button className="btn mt-5 btn-secondary">Get Started</button>
         </div>
         <div className="w-full md:w-1/2 mt-12 md:mt-32 md:ml-15 order-1">
         <img src={OIP} className="w-120 h-92" alt="" />
