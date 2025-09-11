@@ -23,7 +23,7 @@ function Navbar() {
     return ()=>{
       window.removeEventListener('scroll', handleScroll)
     }
-  },[theme])
+  },[])
 
   const navItems = (
     <>
