@@ -12,13 +12,9 @@ const app = express();
 
 app.use(cors({
   origin: "https://ebook-frontendd.onrender.com",
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true
 }));
-
-
-app.options("*", cors());
 
 app.use(express.json());
 
@@ -31,6 +27,7 @@ mongoose.connect(URI)
 
 app.use("/book", bookRoute);
 app.use("/users", userRoute);
+
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
